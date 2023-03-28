@@ -1,14 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail } from 'react-icons/ai'
-import Image from 'next/image'
-import ogi from '../../public/ogi.JPG'
+import useScrollDirection from '@/hooks/useScrollDirection'
 
-const inter = Inter({ subsets: ['latin'] })
+import NavBar from '@/components/navbar/NavBar'
+import Header from '@/components/sections/header/header'
+import Main from '@/components/sections/main'
+import Footer from '@/components/sections/footer/contact'
+
+const links = [
+  { title: 'About', href: '#about' },
+  { title: 'More', href: '#more' },
+  { title: 'Contact', href: '#contact' },
+]
 
 export default function Home() {
+
+  const scrollDirection =  useScrollDirection()
+
   return (
     <>
       <Head>
@@ -19,43 +28,10 @@ export default function Home() {
       </Head>
       <main className='bg-white dark:bg-slate-800'>
         <section className=' min-h-screen'>
-          <nav className='h-50 w-screen  dark:bg-slate-600 flex justify-between items-center'>
-            <div className='items-row w-screen p-3 flex'>
-              <div className='flex gap-4 flex-none items-end'>
-                <Image src={ogi} width={35} height={35} className='rounded-full' />
-                <h1 className='text-xl dark:text-white'>Oğuzhan Gökcekoca</h1>
-              </div>
-              <div className='flex gap-4 flex-grow justify-end'>
-                <ul className='flex gap-28 pr-24 font-extrabold dark:text-slate-300'>
-                  <li className='text-lg'>About</li>
-                  <li className='text-lg'>More</li>
-                  <li className='text-lg'>Contact</li>
-                </ul>
-              </div>
-              <div className='text-3xl flex gap-8 flex-none dark:text-slate-400'>
-                <a href='https://www.linkedin.com/in/oğuzhan-gökcekoca-442802250/'><AiFillLinkedin /></a>
-                <a href='https://github.com/oguzhangkckc'><AiFillGithub /></a>
-                <a href='mailto:ogokcekoca@gmail.com'><AiFillMail /></a>
-                <a href='https://www.instagram.com/oguzhangokcekoca/'><AiFillInstagram /></a>
-              </div>
-            </div>
-          </nav>
-          <div className='h-screen'>
-            <div className='mt-36 rounded-full text-center flex flex-col items-center'>
-              <h2 className='text-4xl py-2 text-white'>Hello, I'm</h2>
-              <h1 className='text-7xl py-2 text-white font-medium'>Oğuzhan Gökcekoca</h1>
-              <h3 className='text-2xl py-2 pt-10 text-white'>I am Software Engineer</h3>
-            </div>
-          </div>
-          <div className='h-screen text-white'>
-            <h2>About</h2>
-          </div>
-          <div className='h-screen text-white'>
-            <h2>More</h2>
-          </div>
-          <div className='h-300 pb-60 text-white'>
-            <h2>Contact</h2>
-          </div>
+          <NavBar />
+          <Header />
+          <Main />
+          <Footer />
         </section>
       </main>
     </>
