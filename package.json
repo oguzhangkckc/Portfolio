@@ -8,7 +8,8 @@
     "start": "next start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "webpack --config webpack.config.js && node export.js"
   },
   "dependencies": {
     "eslint": "8.36.0",
