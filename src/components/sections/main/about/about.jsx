@@ -45,7 +45,7 @@ export default function About() {
                         <div className='flex flex-col justify-end ml-auto'>
                             <div className='pt-16 pr-52'>
                                 <h3 className='text-2xl text-white font-extrabold'>
-                                    Let<span className='text-teal-500 px-2'>me</span> introduce myself<span className='text-teal-500 font-extrabold'>.</span>
+                                    Let<span className='text-teal-500 px-2'>me</span>introduce myself<span className='text-teal-500 font-extrabold'>.</span>
                                 </h3>
                             </div>
                             <div className='pr-16'>
