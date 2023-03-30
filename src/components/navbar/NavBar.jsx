@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail } from 'react-icons/ai'
 import Image from 'next/image'
 import { Link } from 'react-scroll'
-import ogi from '../../../public/ogi.jpg'
+import ogi from "../../../public/ogi.JPG"
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false)
