@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon3.ico" />
       </Head>
-      <main className='bg-white dark:bg-slate-800'>
+      <main className='bg-slate-800'>
         <section className=' min-h-screen'>
           <NavBar />
           <Header />
