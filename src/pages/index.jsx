@@ -14,7 +14,8 @@ export default function Home() {
     <>
       <Head>
         <title>Oğuzhan Gökcekoca</title>
-        <link rel="shortcut icon" href="/static/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
       </Head>
       <main className='bg-slate-800'>
         <section className=' min-h-screen'>
