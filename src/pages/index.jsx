@@ -13,7 +13,6 @@ export default function Home() {
     <>
       <Head>
         <title>Oğuzhan Gökcekoca</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
       <main className='bg-slate-800'>
