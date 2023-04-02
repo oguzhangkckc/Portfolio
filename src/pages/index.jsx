@@ -6,7 +6,6 @@ import NavBar from '@/components/navbar/NavBar'
 import Header from '@/components/sections/header/header'
 import Main from '@/components/sections/main'
 import Footer from '@/components/sections/footer/contact'
-import favicon from "../../public/static/favicon.png"
 
 export default function Home() {
 
