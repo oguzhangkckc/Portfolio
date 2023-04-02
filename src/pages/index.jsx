@@ -13,9 +13,8 @@ export default function Home() {
     <>
       <Head>
         <title>Oğuzhan Gökcekoca</title>
-        <meta name="description" content="Welcome to my website!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
       <main className='bg-slate-800'>
         <section className=' min-h-screen'>
