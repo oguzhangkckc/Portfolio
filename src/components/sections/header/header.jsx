@@ -20,7 +20,7 @@ export default function Header() {
   }, []);
 
   return (
-    <section id='me' className={`${isScrolled ? 'bg-white text-teal-500 shadow-lg transition duration-300' : ''}`}>
+    <section id='me' className={`${isScrolled ? 'text-teal-500 shadow-lg transition duration-300' : ''}`}>
       <div className='h-screen'>
         <div className='pt-36 rounded-full text-center flex flex-col items-center'>
           <h2 className={`text-4xl py-2 text-white ${isScrolled ? 'text-teal-500' : ''}`}>
