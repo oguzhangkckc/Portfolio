@@ -11,7 +11,7 @@ export default function About() {
                     </h2>
                 </div>
                 <div className='flex flex-row'>
-                    <div className='w-4/12 bg-teal-500 ml-32 mt-24 mb-2 rounded-3xl'>
+                    <div className='w-4/12 bg-teal-500 ml-32 mt-24 mb-2 rounded-3xl hidden md:block'>
                         <div className='flex flex-row pt-4 pl-16'>
                             <div>
                                 <h4 className='text-xl pt-4 text-white font-extrabold'>Programming</h4>
@@ -22,8 +22,8 @@ export default function About() {
                             <div className='pt-4 pl-28'>
                                 <h4 className='text-xl text-white font-extrabold'>Tools</h4>
                                 <p className='pt-3 text-l text-slate-800 font-bold'>React</p>
+                                <p className='pt-1 text-l text-slate-800 font-bold'>React Native</p>
                                 <p className='pt-1 text-l text-slate-800 font-bold'>Node.js</p>
-                                <p className='pt-1 text-l text-slate-800 font-bold'>Express.js</p>
                             </div>
                         </div>
                         <div className='flex flex-row pt-16 pl-16'>
