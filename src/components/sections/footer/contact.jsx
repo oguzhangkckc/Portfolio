@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail } from 'react
 
 export default function Footer() {
   return (
-    <section id='contact'>
+    <section id='contact' >
       <div className='bg-gray-700'>
         <div className='h-300 flex'>
           <div className='flex justify-start'>
