@@ -8,7 +8,7 @@ export default function About() {
                 <div className='flex-1'>
                     <div className='flex flex-col justify-between h-full p-16'>
                         <div>
-                            <h2 className='text-slate-400 pt-20 pl-8 text-6xl font-extrabold'>
+                            <h2 className='text-slate-400 pt-20 pl-8 text-5xl sm:text-6xl font-extrabold'>
                                 About<span className='text-teal-500 text-8xl font-extrabold'>.</span>
                             </h2>
                         </div>

@@ -6,7 +6,7 @@ export default function More() {
     <section id='more'>
       <div className='h-screen'>
         <div className='flex justify-end pr-8 sm:pr-20'>
-          <h2 className='text-slate-400 text-4xl pt-32 sm:text-6xl font-extrabold'>
+          <h2 className='text-slate-400 text-5xl pt-32 sm:text-6xl font-extrabold'>
             More<span className='text-teal-500 text-6xl sm:text-8xl font-extrabold'>.</span>
           </h2>
         </div>
