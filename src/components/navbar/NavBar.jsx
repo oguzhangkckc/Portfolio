@@ -42,10 +42,9 @@ export default function NavBar() {
       <div className="flex items-center gap-4 pl-4">
         <Image src={ogi} width={iconSize * 3 / 2} height={iconSize * 3 / 2} className="rounded-full" />
         <Link to="me" spy={true} smooth={true} duration={500} className={`text-sm sm:text-xs md:text-xl font-extrabold dark:text-slate-300 hover:text-teal-500 transition-colors duration-300 ${isScrolled ? 'truncate' : ''}`}>
-          Oğuzhan Gökcekoca
+          {window.innerWidth < 640 ? 'Oğuzhan\nGökcekoca' : 'Oğuzhan Gökcekoca'}
         </Link>
       </div>
-
       <div className="flex flex-wrap md:flex-nowrap items-center gap-8 font-extrabold dark:text-slate-300 text-sm md:text-xl list-none">
         <li>
           <Link to="about" spy={true} smooth={true} duration={500} className="hover:text-teal-500 transition-colors duration-300">
@@ -63,20 +62,23 @@ export default function NavBar() {
           </Link>
         </li>
       </div>
-
-      <div className="flex items-center gap-8 text-3xl dark:text-slate-400">
-        <a href="https://www.linkedin.com/in/oğuzhan-gökcekoca-442802250/" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillLinkedin size={iconSize} />
-        </a>
-        <a href="https://github.com/oguzhangkckc" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillGithub size={iconSize} />
-        </a>
-        <a href="mailto:ogokcekoca@gmail.com" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillMail size={iconSize} />
-        </a>
-        <a href="https://www.instagram.com/oguzhangokcekoca/" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillInstagram size={iconSize} />
-        </a>
+      <div className="flex flex-col items-center gap-2 md:flex-row md:gap-8">
+        <div>
+          <a href="https://www.linkedin.com/in/oğuzhan-gökcekoca-442802250/" className="dark:text-slate-300 hover:text-teal-500 transition-colors duration-300">
+            <AiFillLinkedin size={iconSize} />
+          </a>
+          <a href="https://github.com/oguzhangkckc" className="dark:text-slate-300 hover:text-teal-500 transition-colors duration-300">
+            <AiFillGithub size={iconSize} />
+          </a>
+        </div>
+        <div>
+          <a href="mailto:ogokcekoca@gmail.com" className="dark:text-slate-300 hover:text-teal-500 transition-colors duration-300">
+            <AiFillMail size={iconSize} />
+          </a>
+          <a href="https://www.instagram.com/oguzhangokcekoca/" className="dark:text-slate-300 hover:text-teal-500 transition-colors duration-300">
+            <AiFillInstagram size={iconSize} />
+          </a>
+        </div>
       </div>
     </nav>
   );
