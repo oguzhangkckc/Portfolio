@@ -36,19 +36,22 @@ export default function NavBar() {
       </div>
 
       <ul className="flex items-center gap-8 font-extrabold dark:text-slate-300">
-        <li>
+        <li className="relative">
           <Link to="about" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
             About
+            <span className="absolute top-full left-1/2 transform -translate-x-1/2 h-0.5 w-2 bg-gray-500"></span>
           </Link>
         </li>
-        <li>
+        <li className="relative">
           <Link to="more" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
             More
+            <span className="absolute top-full left-1/2 transform -translate-x-1/2 h-0.5 w-2 bg-gray-500"></span>
           </Link>
         </li>
-        <li>
+        <li className="relative">
           <Link to="contact" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
             Contact
+            <span className="absolute top-full left-1/2 transform -translate-x-1/2 h-0.5 w-2 bg-gray-500"></span>
           </Link>
         </li>
       </ul>
