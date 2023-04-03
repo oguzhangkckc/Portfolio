@@ -7,6 +7,7 @@ import ogi from '../../images/ogi.png';
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [iconSize, setIconSize] = useState(24);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -22,28 +23,42 @@ export default function NavBar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setIconSize(20);
+      } else {
+        setIconSize(24);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <nav className={`fixed top-0 w-full z-50 p-3 flex flex-wrap md:flex-nowrap items-center justify-between ${isScrolled ? 'bg-white shadow-lg transition duration-300' : ''}`}>
+    <nav className={`fixed top-0 w-full z-50 p-3 flex items-center justify-between ${isScrolled ? 'bg-white shadow-lg transition duration-300' : ''}`}>
       <div className="flex items-center gap-4 pl-4">
-        <Image src={ogi} width={35} height={35} className="rounded-full" />
-        <Link to="me" spy={true} smooth={true} duration={500} className="text-2xl font-extrabold dark:text-slate-300 hover:text-teal-500 transition-colors duration-300">
+        <Image src={ogi} width={iconSize * 3 / 2} height={iconSize * 3 / 2} className="rounded-full" />
+        <Link to="me" spy={true} smooth={true} duration={500} className={`text-sm sm:text-xs md:text-xl font-extrabold dark:text-slate-300 hover:text-teal-500 transition-colors duration-300 ${isScrolled ? 'truncate' : ''}`}>
           Oğuzhan Gökcekoca
         </Link>
       </div>
 
-      <div className="flex flex-wrap md:flex-nowrap items-center gap-8 font-extrabold dark:text-slate-300">
+      <div className="flex flex-wrap md:flex-nowrap items-center gap-8 font-extrabold dark:text-slate-300 text-sm md:text-xl list-none">
         <li>
-          <Link to="about" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
+          <Link to="about" spy={true} smooth={true} duration={500} className="hover:text-teal-500 transition-colors duration-300">
             About
           </Link>
         </li>
         <li>
-          <Link to="more" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
+          <Link to="more" spy={true} smooth={true} duration={500} className="hover:text-teal-500 transition-colors duration-300">
             More
           </Link>
         </li>
         <li>
-          <Link to="contact" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
+          <Link to="contact" spy={true} smooth={true} duration={500} className="hover:text-teal-500 transition-colors duration-300">
             Contact
           </Link>
         </li>
@@ -51,16 +66,16 @@ export default function NavBar() {
 
       <div className="flex items-center gap-8 text-3xl dark:text-slate-400">
         <a href="https://www.linkedin.com/in/oğuzhan-gökcekoca-442802250/" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillLinkedin />
+          <AiFillLinkedin size={iconSize} />
         </a>
         <a href="https://github.com/oguzhangkckc" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillGithub />
+          <AiFillGithub size={iconSize} />
         </a>
         <a href="mailto:ogokcekoca@gmail.com" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillMail />
+          <AiFillMail size={iconSize} />
         </a>
         <a href="https://www.instagram.com/oguzhangokcekoca/" className="hover:text-teal-500 transition-colors duration-300">
-          <AiFillInstagram />
+          <AiFillInstagram size={iconSize} />
         </a>
       </div>
     </nav>
