@@ -23,11 +23,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 p-3 flex items-center justify-between ${
-        isScrolled ? 'bg-white shadow-lg transition duration-300' : ''
-      }`}
-    >
+    <nav className={`fixed top-0 w-full z-50 p-3 flex flex-wrap md:flex-nowrap items-center justify-between ${isScrolled ? 'bg-white shadow-lg transition duration-300' : ''}`}>
       <div className="flex items-center gap-4 pl-4">
         <Image src={ogi} width={35} height={35} className="rounded-full" />
         <Link to="me" spy={true} smooth={true} duration={500} className="text-2xl font-extrabold dark:text-slate-300 hover:text-teal-500 transition-colors duration-300">
@@ -35,26 +31,23 @@ export default function NavBar() {
         </Link>
       </div>
 
-      <ul className="flex items-center gap-8 font-extrabold dark:text-slate-300">
-        <li className="relative">
+      <div className="flex flex-wrap md:flex-nowrap items-center gap-8 font-extrabold dark:text-slate-300">
+        <li>
           <Link to="about" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
             About
-            <span className="absolute top-full left-1/2 transform -translate-x-1/2 h-0.5 w-2 bg-gray-500"></span>
           </Link>
         </li>
-        <li className="relative">
+        <li>
           <Link to="more" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
             More
-            <span className="absolute top-full left-1/2 transform -translate-x-1/2 h-0.5 w-2 bg-gray-500"></span>
           </Link>
         </li>
-        <li className="relative">
+        <li>
           <Link to="contact" spy={true} smooth={true} duration={500} className="text-lg hover:text-teal-500 transition-colors duration-300">
             Contact
-            <span className="absolute top-full left-1/2 transform -translate-x-1/2 h-0.5 w-2 bg-gray-500"></span>
           </Link>
         </li>
-      </ul>
+      </div>
 
       <div className="flex items-center gap-8 text-3xl dark:text-slate-400">
         <a href="https://www.linkedin.com/in/oğuzhan-gökcekoca-442802250/" className="hover:text-teal-500 transition-colors duration-300">
