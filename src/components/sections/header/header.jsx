@@ -40,7 +40,7 @@ export default function Header() {
             smooth={true}
             duration={500}
             className={`bg-teal-500 text-white text-lg font-medium rounded-full px-8 py-3 mt-10 hover:bg-white hover:text-teal-500 transition duration-300 ${isScrolled ? 'border border-teal-500' : ''}`}>
-            Learn More
+            Learn More 
           </Link>
         </div>
       </div>
