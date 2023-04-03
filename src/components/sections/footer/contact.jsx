@@ -3,21 +3,19 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail } from 'react
 
 export default function Footer() {
   return (
-    <section id='contact' >
+    <section id='contact'>
       <div className='bg-gray-700'>
         <div className='h-300 flex'>
-          <div className='flex justify-start'>
+          <div className='flex flex-col justify-start'>
             <h2 className='text-white text-6xl pt-10 pl-10 font-extrabold'>
-                Contact<span className='text-teal-500 text-8xl font-extrabold'>.</span>
+              Contact<span className='text-teal-500 text-8xl font-extrabold'>.</span>
             </h2>
+              <p className='text-white text-2xl pt-10 pl-10'>
+                <span className='text-teal-500'>Feel free to contact me</span> for any questions or suggestions
+                <span className='text-teal-500 font-extrabold'>.</span>
+              </p>
           </div>
-          <div className='ml-auto pt-24'>
-            <p className='text-white text-2xl pt-20'>
-              <span className='text-teal-500'>Feel free to contact me</span> for any questions or suggestions
-               <span className='text-teal-500 font-extrabold'>.</span>
-            </p>
-          </div>
-          <div className='flex gap-5 flex-col ml-auto pt-5 pr-10'>
+          <div className='flex gap-5 flex-col ml-auto pt-16 pr-10 lg:flex-row lg:justify-end'>
             <div className='flex items-center text-white text-2xl font-bold hover:text-teal-500 transition-colors duration-300'>
               <AiFillMail className='mr-2' />
               <a href='mailto:ogokcekoca@gmail.com'>Mail</a>
