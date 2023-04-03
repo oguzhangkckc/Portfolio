@@ -7,7 +7,7 @@ export default function Footer() {
       <div className='bg-gray-700'>
         <div className='h-300 flex'>
           <div className='flex flex-col justify-start'>
-            <h2 className='text-white text-6xl pt-10 pl-10 font-extrabold'>
+            <h2 className='text-white text-6xl pt-10 pl-5 font-extrabold'>
               Contact<span className='text-teal-500 text-8xl font-extrabold'>.</span>
             </h2>
               <p className='text-white text-2xl pt-10 pl-10'>
