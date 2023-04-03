@@ -15,7 +15,7 @@ export default function Footer() {
                 <span className='text-teal-500 font-extrabold'>.</span>
               </p>
           </div> 
-          <div className='flex gap-5 flex-col ml-auto pt-16 pr-10 lg:flex-row lg:justify-end'>
+          <div className='flex gap-5 flex-col ml-auto pt-16 pr-10 mr-10 lg:flex-row lg:justify-end'>
             <div className='flex items-center text-white text-2xl font-bold hover:text-teal-500 transition-colors duration-300'>
               <AiFillMail className='mr-2' />
               <a href='mailto:ogokcekoca@gmail.com'>Mail</a>
