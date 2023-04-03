@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <section id='me' className={`${isScrolled ? 'text-teal-500 shadow-lg transition duration-300' : ''}`}>
       <div className='h-screen'>
-        <div className='pt-36 rounded-full text-center flex flex-col items-center'>
+        <div className='pt-56 rounded-full text-center flex flex-col items-center'>
           <h2 className={`text-3xl lg:text-5xl md:text-3xl sm:text-2xl py-2 text-white ${isScrolled ? 'text-teal-500' : ''}`}>
             <span className='text-teal-500'>Hello</span>, I'm
           </h2>
