@@ -33,5 +33,6 @@
   },
   "resolutions": {
     "@next/swc-darwin-x64": "13.4.0"
-  }
+  },
+    "presets": ["next/babel"]
 }
