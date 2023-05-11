@@ -19,7 +19,7 @@ export default function About() {
                                     <p className='text-l text-slate-800 font-bold'>Html</p>
                                     <p className='pt-1 text-l text-slate-800 font-bold'>Css</p>
                                     <p className='pt-1 text-l text-slate-800 font-bold'>JavaScript</p>
-                                </div>
+                                </div> 
                                 <div className='pb-10 pl-20 pr-24'>
                                     <h4 className='text-xl text-white font-extrabold'>Tools</h4>
                                     <p className='text-l text-slate-800 font-bold'>React</p>
