@@ -40,7 +40,7 @@ export default function NavBar() {
 
   function toggleNav() {
     setShowNav(!showNav);
-  }
+  } 
 
 
   return (
