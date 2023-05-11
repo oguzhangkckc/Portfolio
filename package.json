@@ -29,5 +29,8 @@
     "tailwindcss": "^3.2.7",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1"
-  }
+  },
+  "resolutions": {
+    "@next/swc-darwin-x64": "13.4.0"
+  }  
 }
