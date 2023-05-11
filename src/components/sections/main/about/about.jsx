@@ -4,7 +4,7 @@ import React from 'react'
 export default function About() {
     return (
         <section id='about'>
-<div className='grid grid-cols-1 lg:grid-cols-2 h-screen'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 h-screen'>
                 <div className='flex-1'>
                     <div className='flex flex-col justify-between h-full p-16'>
                         <div>
