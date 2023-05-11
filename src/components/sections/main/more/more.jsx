@@ -10,7 +10,7 @@ export default function More() {
             More<span className='text-teal-500 text-6xl sm:text-8xl font-extrabold'>.</span>
           </h2>
         </div>
-        <div> 
+        <div>
           <h2 className='text-white pl-4 sm:pl-40 font-extrabold text-xl sm:text-2xl pt-4 pb-12'>
             More about<span className='text-teal-500 px-2'>my</span>career<span className='text-teal-500 text-2xl sm:text-3xl font-extrabold'>.</span>
           </h2> 
