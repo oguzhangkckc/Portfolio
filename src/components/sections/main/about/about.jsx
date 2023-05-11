@@ -11,7 +11,7 @@ export default function About() {
                             <h2 className='text-slate-400 pt-20 pl-8 text-5xl sm:text-6xl font-extrabold'>
                                 About<span className='text-teal-500 text-8xl font-extrabold'>.</span>
                             </h2>
-                        </div> 
+                        </div>
                         <div className='lg:w-12/12 bg-teal-500 mb-12 mt-8 ml-12 rounded-3xl hidden lg:block'>
                             <div className='flex flex-row pl-16 pt-16'>
                                 <div className='pb-10'>
