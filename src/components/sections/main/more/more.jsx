@@ -13,7 +13,7 @@ export default function More() {
         <div>
           <h2 className='text-white pl-4 sm:pl-40 font-extrabold text-xl sm:text-2xl pt-4 pb-12'>
             More about<span className='text-teal-500 px-2'>my</span>career<span className='text-teal-500 text-2xl sm:text-3xl font-extrabold'>.</span>
-          </h2> 
+          </h2>
           <div className='flex flex-col items-center justify-center'>
             <div className='flex flex-wrap w-full'>
               <div className='flex flex-col items-center justify-center w-full sm:w-1/2 lg:w-1/3 rounded-md p-4 sm:p-10 shadow-lg bg-gray-800 hover:bg-gray-700'>
