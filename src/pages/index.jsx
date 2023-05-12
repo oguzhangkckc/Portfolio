@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Oğuzhan Gökcekoca</title>
         <meta name='description' content='Oğuzhan Gökcekoca' />
-        <link rel="icon" type="image/x-icon" href="favicon.ico"  />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
       </Head>
       <main className='bg-slate-800'>
         <section className=' min-h-screen'>
