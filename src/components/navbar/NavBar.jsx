@@ -46,9 +46,8 @@ export default function NavBar() {
   return (
     <nav className={`fixed top-0 w-full z-50 p-3 flex items-center justify-between ${isScrolled ? 'bg-white shadow-lg transition duration-300' : ''}`}>
       <div className="flex items-center gap-4 pl-4">
-        <Image src={ogi} width={iconSize * 3 / 2} height={iconSize * 3 / 2} className="rounded-full" />
         <Link to="me" spy={true} smooth={true} duration={500} className={`text-sm sm:text-xl md:text-xl font-extrabold dark:text-slate-300 hover:text-teal-500 transition-colors duration-300 ${isScrolled ? 'truncate' : ''} whitespace-normal`}>
-          Oğuzhan <br /> Gökcekoca
+          Oğuzhan Gökcekoca
         </Link>
       </div>
       <div className="flex flex-wrap md:flex-nowrap items-center gap-8 font-extrabold dark:text-slate-300 text-sm sm:text-xl md:text-xl list-none">
